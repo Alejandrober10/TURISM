@@ -1,0 +1,413 @@
+html {
+    font-size: 62.5%;
+    /* reset para dejar estandar de 16px a 10px=1rem */
+}
+
+
+/* Globales */
+
+.contenedor {
+    max-width: 1440px;
+    margin: auto;
+    /* max-width: 120rem; = a 1200px */
+    /* margin: 0 auto; */
+    /* margin-left: 3rem; */
+}
+
+h1 {
+    font-size: 3.5rem;
+    display: block;
+    align-self: flex-end;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+p {
+    font-size: 2.2rem;
+}
+
+
+/* header */
+
+header {
+    background-color: rgb(63, 147, 168);
+}
+
+.logo {
+    display: flex;
+    color: rgb(212, 233, 197);
+    text-decoration: none;
+    font-size: 1.8rem;
+    /* = a 18px */
+    margin: 0;
+    padding: 0;
+    align-items: left;
+}
+
+.logo img {
+    -webkit-box-shadow: 4px 4px 13px 6px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 4px 4px 13px 6px rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 4px 13px 6px rgba(0, 0, 0, 0.19);
+}
+
+.logo p {
+    margin: 1.1rem;
+}
+
+.tamaño-logo {
+    max-width: 20rem;
+}
+
+.site-header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0); */
+    position: absolute;
+    display: block;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* por defecto */
+}
+
+.contenido-header h1 {
+    color: rgb(212, 233, 197);
+    text-align: left;
+    line-height: 2;
+    z-index: 5;
+}
+
+.barra {
+    display: flex;
+    padding: 2rem 1rem 2rem 3rem;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    background-color: rgb(63, 147, 168);
+    max-height: 20px;
+}
+
+.inicio {
+    padding-top: 4rem;
+}
+
+form {
+    padding: 1.5rem 1rem;
+}
+
+fieldset {
+    font-size: 2rem;
+    padding-top: 2rem;
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-image: initial;
+}
+
+input {
+    padding: 2rem;
+    display: block;
+    background-color: rgb(206, 250, 175);
+    width: 95%;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.boton {
+    width: 30rem;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: -internal-light-dark(black, white);
+    background-color: rgb(63, 147, 168);
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: rgb(11, 1, 163);
+    border-image: initial;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+
+/* gastronomia */
+
+.columnas-amarillo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.columnas-azul {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.cuatro-columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2.2rem 4rem;
+}
+
+.tres-columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2.2rem 4rem;
+}
+
+.imagen3 {
+    margin-top: 3rem;
+}
+
+@media(min-width: 1080px) {
+    .tres-columnas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cuatro-columnas {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 2.2rem 4rem;
+    }
+    .imagen3 {
+        margin-top: 0rem;
+    }
+}
+
+.imagen-gastronomia img {
+    max-height: 30rem;
+    margin: 2.2rem 4rem;
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+    border: 2px solid #000000;
+}
+
+.imagen-mosaico img {
+    height: 25rem;
+    margin-right: 2rem;
+    border-radius: 20px 0px 20px 0px;
+    -moz-border-radius: 20px 0px 20px 0px;
+    -webkit-border-radius: 20px 0px 20px 0px;
+    border: 2px solid #000000;
+}
+
+.imagen-mosaico-inicio img {
+    height: 25rem;
+    width: 90%;
+    margin-right: 2rem;
+    border-radius: 20px 0px 20px 0px;
+    -moz-border-radius: 20px 0px 20px 0px;
+    -webkit-border-radius: 20px 0px 20px 0px;
+    border: 2px solid #000000;
+}
+
+
+/* Nosotros */
+
+.fondo-verde {
+    background-color: rgb(125, 196, 75);
+    margin: auto;
+    margin-bottom: 3rem;
+    max-width: 95%;
+    border-radius: 4rem;
+    height: auto;
+    padding-bottom: 5rem;
+    -webkit-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.63);
+    box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.63);
+}
+
+.fondo-Azul {
+    background-color: rgb(63, 147, 168);
+    margin: auto;
+    margin-bottom: 3rem;
+    max-width: 95%;
+    border-radius: 4rem;
+    height: auto;
+    padding-bottom: 5rem;
+    -webkit-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.63);
+    box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.63);
+}
+
+.texto-nosotros {
+    margin: 0rem 4rem;
+    padding-top: 1.5rem;
+}
+
+.titulo-gastro {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.imagen-nosotros {
+    margin: 0rem 4rem;
+    padding-bottom: 1rem;
+}
+
+.imagen-nosotros img {
+    width: 100%;
+    border-radius: 21px 21px 21px 21px;
+    -moz-border-radius: 21px 21px 21px 21px;
+    -webkit-border-radius: 21px 21px 21px 21px;
+    border: 5px solid #000000;
+}
+
+
+/* experiencia TURISM */
+
+.columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media(max-width: 968px) {
+    .columnas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.imagen-experiencia {
+    text-align: center;
+}
+
+.imagen-experiencia img {
+    width: 20rem;
+    margin: 2.2rem 4rem;
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+    border: 2px solid #000000;
+}
+
+
+/* navegacion*/
+
+.navegacion a {
+    color: rgb(212, 233, 197);
+    text-decoration: none;
+    font-size: 2rem;
+    /* = a 18px */
+    padding: 2rem 1rem;
+}
+
+.navegacion a:hover {
+    color: rgba(238, 189, 149, 0.918);
+    /* encima del mouse*/
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navegacion a:last-of-type {
+    margin: 0;
+}
+
+.titulo-principal {
+    height: max-content;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(63, 147, 168);
+    color: white;
+}
+
+.letra-footer {
+    font-size: 1.4rem;
+    line-height: 1rem;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-top-left {
+    width: 50%;
+    min-width: 26rem;
+}
+
+.footer-top-right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.footer-top-right div {
+    width: 20rem;
+    height: 17rem;
+}
+
+.footer-top-left img {
+    margin-top: 3.5rem;
+    margin-left: 30px;
+    max-width: 30rem;
+}
+
+.footer-buttom {
+    display: flex;
+    justify-content: center;
+    padding: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.footer-redes {
+    width: 15rem;
+}
+
+.logo-redes {
+    margin-right: 1rem;
+    max-width: 40px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-top-right div {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-redes {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
